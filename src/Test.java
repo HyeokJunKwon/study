@@ -26,10 +26,10 @@ public class Test {
 		}
 		
 		sc.close();
-//		if (sb.length() > text.length()) {
-//			System.out.println(text);
-//		} else {
+		if (sb.length() > text.length()) {
+			System.out.println(text);
+		} else {
 			System.out.println(sb);
-//		}
+		}
 	}
 }
