@@ -16,9 +16,6 @@ public class Test {
 			if (arr[i].equals(arr[i + 1])) {
 				cnt++;
 //				temp = arr[i];
-			} else if (arr[i + 1] != "") {
-				sb.append(arr[i]);
-				sb.append(cnt);
 			} else {
 				sb.append(arr[i]);
 				sb.append(cnt);
