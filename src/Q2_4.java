@@ -15,7 +15,6 @@ public class Q2_4 {
 		sc.close();
 		
 		System.out.println("Ãâ·Â   : " + listDivision(input, x));
-		
 	}
 	
 	private static LinkedList<Integer> listDivision(String input, int x) {
