@@ -5,21 +5,21 @@ public class Q2_4 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("입력   : ");
+		System.out.print("Input    : ");
 		// ex) 1 2 3 4 5
 		String input = sc.nextLine();
-		System.out.print("분할값 : ");
+		System.out.print("Division : ");
 		// ex) 3
 		int x = Integer.parseInt((sc.nextLine()));
 		
 		sc.close();
 		
-		System.out.println("출력   : " + listDivision(input, x));
+		System.out.println("Output   : " + listDivision(input, x));
 	}
 	
 	private static LinkedList<Integer> listDivision(String input, int x) {
 		LinkedList<Integer> inputList = new LinkedList<>();
-		LinkedList<Integer> resultList = new LinkedList<>();
+		LinkedList<Integer> outputList = new LinkedList<>();
 		
 		String [] arr = input.split(" ");
 		
@@ -29,13 +29,13 @@ public class Q2_4 {
 		
 		for (int i = 0; i < inputList.size(); i++) {
 			if (inputList.get(i) < x) {
-				resultList.addFirst(inputList.get(i));
+				outputList.addFirst(inputList.get(i));
 			} else {
-				resultList.addLast(inputList.get(i));
+				outputList.addLast(inputList.get(i));
 			}
 		}
 		
-		return resultList;
+		return outputList;
 	}
 }
 
