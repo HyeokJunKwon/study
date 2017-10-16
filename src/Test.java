@@ -15,7 +15,7 @@ public class Test {
 			if (i == text.length() - 1) break;
 			if (arr[i].equals(arr[i + 1])) {
 				cnt++;
-//				temp = arr[i];
+				temp = arr[i];
 			} else {
 				sb.append(arr[i]);
 				sb.append(cnt);
