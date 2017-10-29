@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Q3_4 {
 	public static void main(String[] args) {
-		myQueue myq = new myQueue();
+		MyQueue myq = new MyQueue();
 		myq.enqueue(1);
 		myq.enqueue(2);
 		System.out.println(myq.dequeue());
@@ -12,7 +12,7 @@ public class Q3_4 {
 		System.out.println(myq.dequeue());
 	}
 	
-	static class myQueue {
+	static class MyQueue {
 		Stack<Integer> st1 = new Stack<>();
 		Stack<Integer> st2 = new Stack<>();
 		
